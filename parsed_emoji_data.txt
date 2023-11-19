@@ -1,5 +1,6 @@
 Group: Smileys & Emotion
-  Subgroup: face-smiling
+  Subgroup: face
+    Category: smiling
       1F600: 😀 grinning face
       1F603: 😃 grinning face with big eyes
       1F604: 😄 grinning face with smiling eyes
@@ -14,7 +15,7 @@ Group: Smileys & Emotion
       1F609: 😉 winking face
       1F60A: 😊 smiling face with smiling eyes
       1F607: 😇 smiling face with halo
-  Subgroup: face-affection
+    Category: affection
       1F970: 🥰 smiling face with hearts
       1F60D: 😍 smiling face with heart-eyes
       1F929: 🤩 star-struck
@@ -25,14 +26,14 @@ Group: Smileys & Emotion
       1F61A: 😚 kissing face with closed eyes
       1F619: 😙 kissing face with smiling eyes
       1F972: 🥲 smiling face with tear
-  Subgroup: face-tongue
+    Category: tongue
       1F60B: 😋 face savoring food
       1F61B: 😛 face with tongue
       1F61C: 😜 winking face with tongue
       1F92A: 🤪 zany face
       1F61D: 😝 squinting face with tongue
       1F911: 🤑 money-mouth face
-  Subgroup: face-hand
+    Category: hand
       1F917: 🤗 smiling face with open hands
       1F92D: 🤭 face with hand over mouth
       1FAE2: 🫢 face with open eyes and hand over mouth
@@ -40,7 +41,7 @@ Group: Smileys & Emotion
       1F92B: 🤫 shushing face
       1F914: 🤔 thinking face
       1FAE1: 🫡 saluting face
-  Subgroup: face-neutral-skeptical
+    Category: neutral-skeptical
       1F910: 🤐 zipper-mouth face
       1F928: 🤨 face with raised eyebrow
       1F610: 😐 neutral face
@@ -60,13 +61,13 @@ Group: Smileys & Emotion
       1F642: 🙂‍↔ head shaking horizontally
       1F642: 🙂‍↕️ head shaking vertically
       1F642: 🙂‍↕ head shaking vertically
-  Subgroup: face-sleepy
+    Category: sleepy
       1F60C: 😌 relieved face
       1F614: 😔 pensive face
       1F62A: 😪 sleepy face
       1F924: 🤤 drooling face
       1F634: 😴 sleeping face
-  Subgroup: face-unwell
+    Category: unwell
       1F637: 😷 face with medical mask
       1F912: 🤒 face with thermometer
       1F915: 🤕 face with head-bandage
@@ -79,15 +80,15 @@ Group: Smileys & Emotion
       1F635: 😵 face with crossed-out eyes
       1F635: 😵‍💫 face with spiral eyes
       1F92F: 🤯 exploding head
-  Subgroup: face-hat
+    Category: hat
       1F920: 🤠 cowboy hat face
       1F973: 🥳 partying face
       1F978: 🥸 disguised face
-  Subgroup: face-glasses
+    Category: glasses
       1F60E: 😎 smiling face with sunglasses
       1F913: 🤓 nerd face
       1F9D0: 🧐 face with monocle
-  Subgroup: face-concerned
+    Category: concerned
       1F615: 😕 confused face
       1FAE4: 🫤 face with diagonal mouth
       1F61F: 😟 worried face
@@ -115,7 +116,7 @@ Group: Smileys & Emotion
       1F629: 😩 weary face
       1F62B: 😫 tired face
       1F971: 🥱 yawning face
-  Subgroup: face-negative
+    Category: negative
       1F624: 😤 face with steam from nose
       1F621: 😡 enraged face
       1F620: 😠 angry face
@@ -125,7 +126,7 @@ Group: Smileys & Emotion
       1F480: 💀 skull
       2620: ☠️ skull and crossbones
       2620: ☠ skull and crossbones
-  Subgroup: face-costume
+    Category: costume
       1F4A9: 💩 pile of poo
       1F921: 🤡 clown face
       1F479: 👹 ogre
@@ -134,7 +135,8 @@ Group: Smileys & Emotion
       1F47D: 👽 alien
       1F47E: 👾 alien monster
       1F916: 🤖 robot
-  Subgroup: cat-face
+  Subgroup: cat
+    Category: face
       1F63A: 😺 grinning cat
       1F638: 😸 grinning cat with smiling eyes
       1F639: 😹 cat with tears of joy
@@ -144,11 +146,13 @@ Group: Smileys & Emotion
       1F640: 🙀 weary cat
       1F63F: 😿 crying cat
       1F63E: 😾 pouting cat
-  Subgroup: monkey-face
+  Subgroup: monkey
+    Category: face
       1F648: 🙈 see-no-evil monkey
       1F649: 🙉 hear-no-evil monkey
       1F64A: 🙊 speak-no-evil monkey
   Subgroup: heart
+    Category: general
       1F48C: 💌 love letter
       1F498: 💘 heart with arrow
       1F49D: 💝 heart with ribbon
@@ -179,6 +183,7 @@ Group: Smileys & Emotion
       1FA76: 🩶 grey heart
       1F90D: 🤍 white heart
   Subgroup: emotion
+    Category: general
       1F48B: 💋 kiss mark
       1F4AF: 💯 hundred points
       1F4A2: 💢 anger symbol
@@ -200,7 +205,8 @@ Group: Smileys & Emotion
       1F4AD: 💭 thought balloon
       1F4A4: 💤 ZZZ
 Group: People & Body
-  Subgroup: hand-fingers-open
+  Subgroup: hand
+    Category: fingers-open
       1F44B: 👋 waving hand
       1F44B: 👋🏻 waving hand: light skin tone
       1F44B: 👋🏼 waving hand: medium-light skin tone
@@ -268,7 +274,7 @@ Group: People & Body
       1FAF8: 🫸🏽 rightwards pushing hand: medium skin tone
       1FAF8: 🫸🏾 rightwards pushing hand: medium-dark skin tone
       1FAF8: 🫸🏿 rightwards pushing hand: dark skin tone
-  Subgroup: hand-fingers-partial
+    Category: fingers-partial
       1F44C: 👌 OK hand
       1F44C: 👌🏻 OK hand: light skin tone
       1F44C: 👌🏼 OK hand: medium-light skin tone
@@ -324,7 +330,7 @@ Group: People & Body
       1F919: 🤙🏽 call me hand: medium skin tone
       1F919: 🤙🏾 call me hand: medium-dark skin tone
       1F919: 🤙🏿 call me hand: dark skin tone
-  Subgroup: hand-single-finger
+    Category: single-finger
       1F448: 👈 backhand index pointing left
       1F448: 👈🏻 backhand index pointing left: light skin tone
       1F448: 👈🏼 backhand index pointing left: medium-light skin tone
@@ -368,7 +374,7 @@ Group: People & Body
       1FAF5: 🫵🏽 index pointing at the viewer: medium skin tone
       1FAF5: 🫵🏾 index pointing at the viewer: medium-dark skin tone
       1FAF5: 🫵🏿 index pointing at the viewer: dark skin tone
-  Subgroup: hand-fingers-closed
+    Category: fingers-closed
       1F44D: 👍 thumbs up
       1F44D: 👍🏻 thumbs up: light skin tone
       1F44D: 👍🏼 thumbs up: medium-light skin tone
@@ -405,7 +411,28 @@ Group: People & Body
       1F91C: 🤜🏽 right-facing fist: medium skin tone
       1F91C: 🤜🏾 right-facing fist: medium-dark skin tone
       1F91C: 🤜🏿 right-facing fist: dark skin tone
+    Category: prop
+      270D: ✍️ writing hand
+      270D: ✍ writing hand
+      270D: ✍🏻 writing hand: light skin tone
+      270D: ✍🏼 writing hand: medium-light skin tone
+      270D: ✍🏽 writing hand: medium skin tone
+      270D: ✍🏾 writing hand: medium-dark skin tone
+      270D: ✍🏿 writing hand: dark skin tone
+      1F485: 💅 nail polish
+      1F485: 💅🏻 nail polish: light skin tone
+      1F485: 💅🏼 nail polish: medium-light skin tone
+      1F485: 💅🏽 nail polish: medium skin tone
+      1F485: 💅🏾 nail polish: medium-dark skin tone
+      1F485: 💅🏿 nail polish: dark skin tone
+      1F933: 🤳 selfie
+      1F933: 🤳🏻 selfie: light skin tone
+      1F933: 🤳🏼 selfie: medium-light skin tone
+      1F933: 🤳🏽 selfie: medium skin tone
+      1F933: 🤳🏾 selfie: medium-dark skin tone
+      1F933: 🤳🏿 selfie: dark skin tone
   Subgroup: hands
+    Category: general
       1F44F: 👏 clapping hands
       1F44F: 👏🏻 clapping hands: light skin tone
       1F44F: 👏🏼 clapping hands: medium-light skin tone
@@ -468,27 +495,8 @@ Group: People & Body
       1F64F: 🙏🏽 folded hands: medium skin tone
       1F64F: 🙏🏾 folded hands: medium-dark skin tone
       1F64F: 🙏🏿 folded hands: dark skin tone
-  Subgroup: hand-prop
-      270D: ✍️ writing hand
-      270D: ✍ writing hand
-      270D: ✍🏻 writing hand: light skin tone
-      270D: ✍🏼 writing hand: medium-light skin tone
-      270D: ✍🏽 writing hand: medium skin tone
-      270D: ✍🏾 writing hand: medium-dark skin tone
-      270D: ✍🏿 writing hand: dark skin tone
-      1F485: 💅 nail polish
-      1F485: 💅🏻 nail polish: light skin tone
-      1F485: 💅🏼 nail polish: medium-light skin tone
-      1F485: 💅🏽 nail polish: medium skin tone
-      1F485: 💅🏾 nail polish: medium-dark skin tone
-      1F485: 💅🏿 nail polish: dark skin tone
-      1F933: 🤳 selfie
-      1F933: 🤳🏻 selfie: light skin tone
-      1F933: 🤳🏼 selfie: medium-light skin tone
-      1F933: 🤳🏽 selfie: medium skin tone
-      1F933: 🤳🏾 selfie: medium-dark skin tone
-      1F933: 🤳🏿 selfie: dark skin tone
-  Subgroup: body-parts
+  Subgroup: body
+    Category: parts
       1F4AA: 💪 flexed biceps
       1F4AA: 💪🏻 flexed biceps: light skin tone
       1F4AA: 💪🏼 flexed biceps: medium-light skin tone
@@ -539,6 +547,7 @@ Group: People & Body
       1F444: 👄 mouth
       1FAE6: 🫦 biting lip
   Subgroup: person
+    Category: general
       1F476: 👶 baby
       1F476: 👶🏻 baby: light skin tone
       1F476: 👶🏼 baby: medium-light skin tone
@@ -731,7 +740,7 @@ Group: People & Body
       1F475: 👵🏽 old woman: medium skin tone
       1F475: 👵🏾 old woman: medium-dark skin tone
       1F475: 👵🏿 old woman: dark skin tone
-  Subgroup: person-gesture
+    Category: gesture
       1F64D: 🙍 person frowning
       1F64D: 🙍🏻 person frowning: light skin tone
       1F64D: 🙍🏼 person frowning: medium-light skin tone
@@ -1032,7 +1041,7 @@ Group: People & Body
       1F937: 🤷🏾‍♀ woman shrugging: medium-dark skin tone
       1F937: 🤷🏿‍♀️ woman shrugging: dark skin tone
       1F937: 🤷🏿‍♀ woman shrugging: dark skin tone
-  Subgroup: person-role
+    Category: role
       1F9D1: 🧑‍⚕️ health worker
       1F9D1: 🧑‍⚕ health worker
       1F9D1: 🧑🏻‍⚕️ health worker: light skin tone
@@ -1668,7 +1677,7 @@ Group: People & Body
       1F9D1: 🧑🏽‍🍼 person feeding baby: medium skin tone
       1F9D1: 🧑🏾‍🍼 person feeding baby: medium-dark skin tone
       1F9D1: 🧑🏿‍🍼 person feeding baby: dark skin tone
-  Subgroup: person-fantasy
+    Category: fantasy
       1F47C: 👼 baby angel
       1F47C: 👼🏻 baby angel: light skin tone
       1F47C: 👼🏼 baby angel: medium-light skin tone
@@ -1914,7 +1923,7 @@ Group: People & Body
       1F9DF: 🧟‍♀️ woman zombie
       1F9DF: 🧟‍♀ woman zombie
       1F9CC: 🧌 troll
-  Subgroup: person-activity
+    Category: activity
       1F486: 💆 person getting massage
       1F486: 💆🏻 person getting massage: light skin tone
       1F486: 💆🏼 person getting massage: medium-light skin tone
@@ -2521,7 +2530,7 @@ Group: People & Body
       1F9D7: 🧗🏾‍♀ woman climbing: medium-dark skin tone
       1F9D7: 🧗🏿‍♀️ woman climbing: dark skin tone
       1F9D7: 🧗🏿‍♀ woman climbing: dark skin tone
-  Subgroup: person-sport
+    Category: sport
       1F93A: 🤺 person fencing
       1F3C7: 🏇 horse racing
       1F3C7: 🏇🏻 horse racing: light skin tone
@@ -2917,7 +2926,7 @@ Group: People & Body
       1F939: 🤹🏾‍♀ woman juggling: medium-dark skin tone
       1F939: 🤹🏿‍♀️ woman juggling: dark skin tone
       1F939: 🤹🏿‍♀ woman juggling: dark skin tone
-  Subgroup: person-resting
+    Category: resting
       1F9D8: 🧘 person in lotus position
       1F9D8: 🧘🏻 person in lotus position: light skin tone
       1F9D8: 🧘🏼 person in lotus position: medium-light skin tone
@@ -2960,7 +2969,20 @@ Group: People & Body
       1F6CC: 🛌🏽 person in bed: medium skin tone
       1F6CC: 🛌🏾 person in bed: medium-dark skin tone
       1F6CC: 🛌🏿 person in bed: dark skin tone
+    Category: symbol
+      1F5E3: 🗣️ speaking head
+      1F5E3: 🗣 speaking head
+      1F464: 👤 bust in silhouette
+      1F465: 👥 busts in silhouette
+      1FAC2: 🫂 people hugging
+      1F46A: 👪 family
+      1F9D1: 🧑‍🧑‍🧒 family: adult, adult, child
+      1F9D1: 🧑‍🧑‍🧒‍🧒 family: adult, adult, child, child
+      1F9D1: 🧑‍🧒 family: adult, child
+      1F9D1: 🧑‍🧒‍🧒 family: adult, child, child
+      1F463: 👣 footprints
   Subgroup: family
+    Category: general
       1F9D1: 🧑‍🤝‍🧑 people holding hands
       1F9D1: 🧑🏻‍🤝‍🧑🏻 people holding hands: light skin tone
       1F9D1: 🧑🏻‍🤝‍🧑🏼 people holding hands: light skin tone, medium-light skin tone
@@ -3494,32 +3516,23 @@ Group: People & Body
       1F469: 👩‍👧 family: woman, girl
       1F469: 👩‍👧‍👦 family: woman, girl, boy
       1F469: 👩‍👧‍👧 family: woman, girl, girl
-  Subgroup: person-symbol
-      1F5E3: 🗣️ speaking head
-      1F5E3: 🗣 speaking head
-      1F464: 👤 bust in silhouette
-      1F465: 👥 busts in silhouette
-      1FAC2: 🫂 people hugging
-      1F46A: 👪 family
-      1F9D1: 🧑‍🧑‍🧒 family: adult, adult, child
-      1F9D1: 🧑‍🧑‍🧒‍🧒 family: adult, adult, child, child
-      1F9D1: 🧑‍🧒 family: adult, child
-      1F9D1: 🧑‍🧒‍🧒 family: adult, child, child
-      1F463: 👣 footprints
 Group: Component
-  Subgroup: skin-tone
+  Subgroup: skin
+    Category: tone
       1F3FB: 🏻 light skin tone
       1F3FC: 🏼 medium-light skin tone
       1F3FD: 🏽 medium skin tone
       1F3FE: 🏾 medium-dark skin tone
       1F3FF: 🏿 dark skin tone
-  Subgroup: hair-style
+  Subgroup: hair
+    Category: style
       1F9B0: 🦰 red hair
       1F9B1: 🦱 curly hair
       1F9B3: 🦳 white hair
       1F9B2: 🦲 bald
 Group: Animals & Nature
-  Subgroup: animal-mammal
+  Subgroup: animal
+    Category: mammal
       1F435: 🐵 monkey face
       1F412: 🐒 monkey
       1F98D: 🦍 gorilla
@@ -3588,7 +3601,7 @@ Group: Animals & Nature
       1F998: 🦘 kangaroo
       1F9A1: 🦡 badger
       1F43E: 🐾 paw prints
-  Subgroup: animal-bird
+    Category: bird
       1F983: 🦃 turkey
       1F414: 🐔 chicken
       1F413: 🐓 rooster
@@ -3612,9 +3625,9 @@ Group: Animals & Nature
       1F426: 🐦‍⬛ black bird
       1FABF: 🪿 goose
       1F426: 🐦‍🔥 phoenix
-  Subgroup: animal-amphibian
+    Category: amphibian
       1F438: 🐸 frog
-  Subgroup: animal-reptile
+    Category: reptile
       1F40A: 🐊 crocodile
       1F422: 🐢 turtle
       1F98E: 🦎 lizard
@@ -3623,7 +3636,7 @@ Group: Animals & Nature
       1F409: 🐉 dragon
       1F995: 🦕 sauropod
       1F996: 🦖 T-Rex
-  Subgroup: animal-marine
+    Category: marine
       1F433: 🐳 spouting whale
       1F40B: 🐋 whale
       1F42C: 🐬 dolphin
@@ -3636,7 +3649,7 @@ Group: Animals & Nature
       1F41A: 🐚 spiral shell
       1FAB8: 🪸 coral
       1FABC: 🪼 jellyfish
-  Subgroup: animal-bug
+    Category: bug
       1F40C: 🐌 snail
       1F98B: 🦋 butterfly
       1F41B: 🐛 bug
@@ -3655,7 +3668,8 @@ Group: Animals & Nature
       1FAB0: 🪰 fly
       1FAB1: 🪱 worm
       1F9A0: 🦠 microbe
-  Subgroup: plant-flower
+  Subgroup: plant
+    Category: flower
       1F490: 💐 bouquet
       1F338: 🌸 cherry blossom
       1F4AE: 💮 white flower
@@ -3669,7 +3683,7 @@ Group: Animals & Nature
       1F33C: 🌼 blossom
       1F337: 🌷 tulip
       1FABB: 🪻 hyacinth
-  Subgroup: plant-other
+    Category: other
       1F331: 🌱 seedling
       1FAB4: 🪴 potted plant
       1F332: 🌲 evergreen tree
@@ -3688,7 +3702,8 @@ Group: Animals & Nature
       1FABA: 🪺 nest with eggs
       1F344: 🍄 mushroom
 Group: Food & Drink
-  Subgroup: food-fruit
+  Subgroup: food
+    Category: fruit
       1F347: 🍇 grapes
       1F348: 🍈 melon
       1F349: 🍉 watermelon
@@ -3709,7 +3724,7 @@ Group: Food & Drink
       1F345: 🍅 tomato
       1FAD2: 🫒 olive
       1F965: 🥥 coconut
-  Subgroup: food-vegetable
+    Category: vegetable
       1F951: 🥑 avocado
       1F346: 🍆 eggplant
       1F954: 🥔 potato
@@ -3729,7 +3744,7 @@ Group: Food & Drink
       1FADA: 🫚 ginger root
       1FADB: 🫛 pea pod
       1F344: 🍄‍🟫 brown mushroom
-  Subgroup: food-prepared
+    Category: prepared
       1F35E: 🍞 bread
       1F950: 🥐 croissant
       1F956: 🥖 baguette bread
@@ -3764,7 +3779,7 @@ Group: Food & Drink
       1F9C8: 🧈 butter
       1F9C2: 🧂 salt
       1F96B: 🥫 canned food
-  Subgroup: food-asian
+    Category: asian
       1F371: 🍱 bento box
       1F358: 🍘 rice cracker
       1F359: 🍙 rice ball
@@ -3782,13 +3797,13 @@ Group: Food & Drink
       1F95F: 🥟 dumpling
       1F960: 🥠 fortune cookie
       1F961: 🥡 takeout box
-  Subgroup: food-marine
+    Category: marine
       1F980: 🦀 crab
       1F99E: 🦞 lobster
       1F990: 🦐 shrimp
       1F991: 🦑 squid
       1F9AA: 🦪 oyster
-  Subgroup: food-sweet
+    Category: sweet
       1F366: 🍦 soft ice cream
       1F367: 🍧 shaved ice
       1F368: 🍨 ice cream
@@ -3804,6 +3819,7 @@ Group: Food & Drink
       1F36E: 🍮 custard
       1F36F: 🍯 honey pot
   Subgroup: drink
+    Category: general
       1F37C: 🍼 baby bottle
       1F95B: 🥛 glass of milk
       2615: ☕ hot beverage
@@ -3825,6 +3841,7 @@ Group: Food & Drink
       1F9C9: 🧉 mate
       1F9CA: 🧊 ice
   Subgroup: dishware
+    Category: general
       1F962: 🥢 chopsticks
       1F37D: 🍽️ fork and knife with plate
       1F37D: 🍽 fork and knife with plate
@@ -3834,7 +3851,8 @@ Group: Food & Drink
       1FAD9: 🫙 jar
       1F3FA: 🏺 amphora
 Group: Travel & Places
-  Subgroup: place-map
+  Subgroup: place
+    Category: map
       1F30D: 🌍 globe showing Europe-Africa
       1F30E: 🌎 globe showing Americas
       1F30F: 🌏 globe showing Asia-Australia
@@ -3843,7 +3861,7 @@ Group: Travel & Places
       1F5FA: 🗺 world map
       1F5FE: 🗾 map of Japan
       1F9ED: 🧭 compass
-  Subgroup: place-geographic
+    Category: geographic
       1F3D4: 🏔️ snow-capped mountain
       1F3D4: 🏔 snow-capped mountain
       26F0: ⛰️ mountain
@@ -3860,7 +3878,7 @@ Group: Travel & Places
       1F3DD: 🏝 desert island
       1F3DE: 🏞️ national park
       1F3DE: 🏞 national park
-  Subgroup: place-building
+    Category: building
       1F3DF: 🏟️ stadium
       1F3DF: 🏟 stadium
       1F3DB: 🏛️ classical building
@@ -3893,7 +3911,7 @@ Group: Travel & Places
       1F492: 💒 wedding
       1F5FC: 🗼 Tokyo tower
       1F5FD: 🗽 Statue of Liberty
-  Subgroup: place-religious
+    Category: religious
       26EA: ⛪ church
       1F54C: 🕌 mosque
       1F6D5: 🛕 hindu temple
@@ -3901,7 +3919,7 @@ Group: Travel & Places
       26E9: ⛩️ shinto shrine
       26E9: ⛩ shinto shrine
       1F54B: 🕋 kaaba
-  Subgroup: place-other
+    Category: other
       26F2: ⛲ fountain
       26FA: ⛺ tent
       1F301: 🌁 foggy
@@ -3921,7 +3939,8 @@ Group: Travel & Places
       1F3A2: 🎢 roller coaster
       1F488: 💈 barber pole
       1F3AA: 🎪 circus tent
-  Subgroup: transport-ground
+  Subgroup: transport
+    Category: ground
       1F682: 🚂 locomotive
       1F683: 🚃 railway car
       1F684: 🚄 high-speed train
@@ -3977,7 +3996,7 @@ Group: Travel & Places
       1F6A6: 🚦 vertical traffic light
       1F6D1: 🛑 stop sign
       1F6A7: 🚧 construction
-  Subgroup: transport-water
+    Category: water
       2693: ⚓ anchor
       1F6DF: 🛟 ring buoy
       26F5: ⛵ sailboat
@@ -3990,7 +4009,7 @@ Group: Travel & Places
       1F6E5: 🛥️ motor boat
       1F6E5: 🛥 motor boat
       1F6A2: 🚢 ship
-  Subgroup: transport-air
+    Category: air
       2708: ✈️ airplane
       2708: ✈ airplane
       1F6E9: 🛩️ small airplane
@@ -4008,10 +4027,12 @@ Group: Travel & Places
       1F680: 🚀 rocket
       1F6F8: 🛸 flying saucer
   Subgroup: hotel
+    Category: general
       1F6CE: 🛎️ bellhop bell
       1F6CE: 🛎 bellhop bell
       1F9F3: 🧳 luggage
   Subgroup: time
+    Category: general
       231B: ⌛ hourglass done
       23F3: ⏳ hourglass not done
       231A: ⌚ watch
@@ -4047,6 +4068,7 @@ Group: Travel & Places
       1F55A: 🕚 eleven o’clock
       1F566: 🕦 eleven-thirty
   Subgroup: sky & weather
+    Category: general
       1F311: 🌑 new moon
       1F312: 🌒 waxing crescent moon
       1F313: 🌓 first quarter moon
@@ -4114,6 +4136,7 @@ Group: Travel & Places
       1F30A: 🌊 water wave
 Group: Activities
   Subgroup: event
+    Category: general
       1F383: 🎃 jack-o-lantern
       1F384: 🎄 Christmas tree
       1F386: 🎆 fireworks
@@ -4137,7 +4160,8 @@ Group: Activities
       1F39F: 🎟️ admission tickets
       1F39F: 🎟 admission tickets
       1F3AB: 🎫 ticket
-  Subgroup: award-medal
+  Subgroup: award
+    Category: medal
       1F396: 🎖️ military medal
       1F396: 🎖 military medal
       1F3C6: 🏆 trophy
@@ -4146,6 +4170,7 @@ Group: Activities
       1F948: 🥈 2nd place medal
       1F949: 🥉 3rd place medal
   Subgroup: sport
+    Category: general
       26BD: ⚽ soccer ball
       26BE: ⚾ baseball
       1F94E: 🥎 softball
@@ -4175,6 +4200,7 @@ Group: Activities
       1F6F7: 🛷 sled
       1F94C: 🥌 curling stone
   Subgroup: game
+    Category: general
       1F3AF: 🎯 bullseye
       1FA80: 🪀 yo-yo
       1FA81: 🪁 kite
@@ -4206,6 +4232,7 @@ Group: Activities
       1F004: 🀄 mahjong red dragon
       1F3B4: 🎴 flower playing cards
   Subgroup: arts & crafts
+    Category: general
       1F3AD: 🎭 performing arts
       1F5BC: 🖼️ framed picture
       1F5BC: 🖼 framed picture
@@ -4216,6 +4243,7 @@ Group: Activities
       1FAA2: 🪢 knot
 Group: Objects
   Subgroup: clothing
+    Category: general
       1F453: 👓 glasses
       1F576: 🕶️ sunglasses
       1F576: 🕶 sunglasses
@@ -4267,6 +4295,7 @@ Group: Objects
       1F48D: 💍 ring
       1F48E: 💎 gem stone
   Subgroup: sound
+    Category: general
       1F507: 🔇 muted speaker
       1F508: 🔈 speaker low volume
       1F509: 🔉 speaker medium volume
@@ -4277,6 +4306,7 @@ Group: Objects
       1F514: 🔔 bell
       1F515: 🔕 bell with slash
   Subgroup: music
+    Category: general
       1F3BC: 🎼 musical score
       1F3B5: 🎵 musical note
       1F3B6: 🎶 musical notes
@@ -4289,7 +4319,8 @@ Group: Objects
       1F3A4: 🎤 microphone
       1F3A7: 🎧 headphone
       1F4FB: 📻 radio
-  Subgroup: musical-instrument
+  Subgroup: musical
+    Category: instrument
       1F3B7: 🎷 saxophone
       1FA97: 🪗 accordion
       1F3B8: 🎸 guitar
@@ -4302,6 +4333,7 @@ Group: Objects
       1FA87: 🪇 maracas
       1FA88: 🪈 flute
   Subgroup: phone
+    Category: general
       1F4F1: 📱 mobile phone
       1F4F2: 📲 mobile phone with arrow
       260E: ☎️ telephone
@@ -4310,6 +4342,7 @@ Group: Objects
       1F4DF: 📟 pager
       1F4E0: 📠 fax machine
   Subgroup: computer
+    Category: general
       1F50B: 🔋 battery
       1FAAB: 🪫 low battery
       1F50C: 🔌 electric plug
@@ -4330,6 +4363,7 @@ Group: Objects
       1F4C0: 📀 dvd
       1F9EE: 🧮 abacus
   Subgroup: light & video
+    Category: general
       1F3A5: 🎥 movie camera
       1F39E: 🎞️ film frames
       1F39E: 🎞 film frames
@@ -4349,7 +4383,8 @@ Group: Objects
       1F526: 🔦 flashlight
       1F3EE: 🏮 red paper lantern
       1FA94: 🪔 diya lamp
-  Subgroup: book-paper
+  Subgroup: book
+    Category: paper
       1F4D4: 📔 notebook with decorative cover
       1F4D5: 📕 closed book
       1F4D6: 📖 open book
@@ -4370,6 +4405,7 @@ Group: Objects
       1F3F7: 🏷️ label
       1F3F7: 🏷 label
   Subgroup: money
+    Category: general
       1F4B0: 💰 money bag
       1FA99: 🪙 coin
       1F4B4: 💴 yen banknote
@@ -4381,6 +4417,7 @@ Group: Objects
       1F9FE: 🧾 receipt
       1F4B9: 💹 chart increasing with yen
   Subgroup: mail
+    Category: general
       2709: ✉️ envelope
       2709: ✉ envelope
       1F4E7: 📧 e-mail
@@ -4397,6 +4434,7 @@ Group: Objects
       1F5F3: 🗳️ ballot box with ballot
       1F5F3: 🗳 ballot box with ballot
   Subgroup: writing
+    Category: general
       270F: ✏️ pencil
       270F: ✏ pencil
       2712: ✒️ black nib
@@ -4411,6 +4449,7 @@ Group: Objects
       1F58D: 🖍 crayon
       1F4DD: 📝 memo
   Subgroup: office
+    Category: general
       1F4BC: 💼 briefcase
       1F4C1: 📁 file folder
       1F4C2: 📂 open file folder
@@ -4443,6 +4482,7 @@ Group: Objects
       1F5D1: 🗑️ wastebasket
       1F5D1: 🗑 wastebasket
   Subgroup: lock
+    Category: general
       1F512: 🔒 locked
       1F513: 🔓 unlocked
       1F50F: 🔏 locked with pen
@@ -4451,6 +4491,7 @@ Group: Objects
       1F5DD: 🗝️ old key
       1F5DD: 🗝 old key
   Subgroup: tool
+    Category: general
       1F528: 🔨 hammer
       1FA93: 🪓 axe
       26CF: ⛏️ pick
@@ -4489,6 +4530,7 @@ Group: Objects
       1F9F2: 🧲 magnet
       1FA9C: 🪜 ladder
   Subgroup: science
+    Category: general
       2697: ⚗️ alembic
       2697: ⚗ alembic
       1F9EA: 🧪 test tube
@@ -4498,6 +4540,7 @@ Group: Objects
       1F52D: 🔭 telescope
       1F4E1: 📡 satellite antenna
   Subgroup: medical
+    Category: general
       1F489: 💉 syringe
       1FA78: 🩸 drop of blood
       1F48A: 💊 pill
@@ -4506,6 +4549,7 @@ Group: Objects
       1FA7A: 🩺 stethoscope
       1FA7B: 🩻 x-ray
   Subgroup: household
+    Category: general
       1F6AA: 🚪 door
       1F6D7: 🛗 elevator
       1FA9E: 🪞 mirror
@@ -4533,7 +4577,8 @@ Group: Objects
       1F9FD: 🧽 sponge
       1F9EF: 🧯 fire extinguisher
       1F6D2: 🛒 shopping cart
-  Subgroup: other-object
+  Subgroup: other
+    Category: object
       1F6AC: 🚬 cigarette
       26B0: ⚰️ coffin
       26B0: ⚰ coffin
@@ -4546,7 +4591,8 @@ Group: Objects
       1FAA7: 🪧 placard
       1FAAA: 🪪 identification card
 Group: Symbols
-  Subgroup: transport-sign
+  Subgroup: transport
+    Category: sign
       1F3E7: 🏧 ATM sign
       1F6AE: 🚮 litter in bin sign
       1F6B0: 🚰 potable water
@@ -4561,6 +4607,7 @@ Group: Symbols
       1F6C4: 🛄 baggage claim
       1F6C5: 🛅 left luggage
   Subgroup: warning
+    Category: general
       26A0: ⚠️ warning
       26A0: ⚠ warning
       1F6B8: 🚸 children crossing
@@ -4578,6 +4625,7 @@ Group: Symbols
       2623: ☣️ biohazard
       2623: ☣ biohazard
   Subgroup: arrow
+    Category: general
       2B06: ⬆️ up arrow
       2B06: ⬆ up arrow
       2197: ↗️ up-right arrow
@@ -4614,6 +4662,7 @@ Group: Symbols
       1F51C: 🔜 SOON arrow
       1F51D: 🔝 TOP arrow
   Subgroup: religion
+    Category: general
       1F6D0: 🛐 place of worship
       269B: ⚛️ atom symbol
       269B: ⚛ atom symbol
@@ -4637,6 +4686,7 @@ Group: Symbols
       1F52F: 🔯 dotted six-pointed star
       1FAAF: 🪯 khanda
   Subgroup: zodiac
+    Category: general
       2648: ♈ Aries
       2649: ♉ Taurus
       264A: ♊ Gemini
@@ -4650,7 +4700,8 @@ Group: Symbols
       2652: ♒ Aquarius
       2653: ♓ Pisces
       26CE: ⛎ Ophiuchus
-  Subgroup: av-symbol
+  Subgroup: av
+    Category: symbol
       1F500: 🔀 shuffle tracks button
       1F501: 🔁 repeat button
       1F502: 🔂 repeat single button
@@ -4686,6 +4737,7 @@ Group: Symbols
       1F4F3: 📳 vibration mode
       1F4F4: 📴 mobile phone off
   Subgroup: gender
+    Category: general
       2640: ♀️ female sign
       2640: ♀ female sign
       2642: ♂️ male sign
@@ -4693,6 +4745,7 @@ Group: Symbols
       26A7: ⚧️ transgender symbol
       26A7: ⚧ transgender symbol
   Subgroup: math
+    Category: general
       2716: ✖️ multiply
       2716: ✖ multiply
       2795: ➕ plus
@@ -4702,6 +4755,7 @@ Group: Symbols
       267E: ♾️ infinity
       267E: ♾ infinity
   Subgroup: punctuation
+    Category: general
       203C: ‼️ double exclamation mark
       203C: ‼ double exclamation mark
       2049: ⁉️ exclamation question mark
@@ -4713,9 +4767,11 @@ Group: Symbols
       3030: 〰️ wavy dash
       3030: 〰 wavy dash
   Subgroup: currency
+    Category: general
       1F4B1: 💱 currency exchange
       1F4B2: 💲 heavy dollar sign
-  Subgroup: other-symbol
+  Subgroup: other
+    Category: symbol
       2695: ⚕️ medical symbol
       2695: ⚕ medical symbol
       267B: ♻️ recycling symbol
@@ -4750,6 +4806,7 @@ Group: Symbols
       2122: ™️ trade mark
       2122: ™ trade mark
   Subgroup: keycap
+    Category: general
       0023: #️⃣ keycap: #
       0023: #⃣ keycap: #
       002A: *️⃣ keycap: *
@@ -4776,6 +4833,7 @@ Group: Symbols
       0039: 9⃣ keycap: 9
       1F51F: 🔟 keycap: 10
   Subgroup: alphanum
+    Category: general
       1F520: 🔠 input latin uppercase
       1F521: 🔡 input latin lowercase
       1F522: 🔢 input numbers
@@ -4826,6 +4884,7 @@ Group: Symbols
       1F23A: 🈺 Japanese “open for business” button
       1F235: 🈵 Japanese “no vacancy” button
   Subgroup: geometric
+    Category: general
       1F534: 🔴 red circle
       1F7E0: 🟠 orange circle
       1F7E1: 🟡 yellow circle
@@ -4866,6 +4925,7 @@ Group: Symbols
       1F532: 🔲 black square button
 Group: Flags
   Subgroup: flag
+    Category: general
       1F3C1: 🏁 chequered flag
       1F6A9: 🚩 triangular flag
       1F38C: 🎌 crossed flags
@@ -4880,7 +4940,8 @@ Group: Flags
       1F3F3: 🏳‍⚧ transgender flag
       1F3F4: 🏴‍☠️ pirate flag
       1F3F4: 🏴‍☠ pirate flag
-  Subgroup: country-flag
+  Subgroup: country
+    Category: flag
       1F1E6: 🇦🇨 flag: Ascension Island
       1F1E6: 🇦🇩 flag: Andorra
       1F1E6: 🇦🇪 flag: United Arab Emirates
@@ -5139,7 +5200,8 @@ Group: Flags
       1F1FF: 🇿🇦 flag: South Africa
       1F1FF: 🇿🇲 flag: Zambia
       1F1FF: 🇿🇼 flag: Zimbabwe
-  Subgroup: subdivision-flag
+  Subgroup: subdivision
+    Category: flag
       1F3F4: 🏴󠁧󠁢󠁥󠁮󠁧󠁿 flag: England
       1F3F4: 🏴󠁧󠁢󠁳󠁣󠁴󠁿 flag: Scotland
       1F3F4: 🏴󠁧󠁢󠁷󠁬󠁳󠁿 flag: Wales
