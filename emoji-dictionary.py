@@ -1,6 +1,16 @@
 import json
 import re
 
+# Dictionary of interjections
+interjections = {
+    "Food & Drink": "Delicious!",
+    "food": "Nom Nom!",
+    "fruit": "Sweet!",
+    "animal": "Cute!",
+    "vegetable": "Healthy!"
+    # ... add more mappings as needed
+}
+
 def parse_emoji_data(file_path):
     emoji_dict = {}
     current_group = None
@@ -11,24 +21,30 @@ def parse_emoji_data(file_path):
         for line in file:
             if line.startswith('# group:'):
                 current_group = line.split(': ')[1].strip()
-                emoji_dict[current_group] = {}
+                emoji_dict[current_group] = {
+                    "interjection": interjections.get(current_group, "!"),
+                    "subgroups": {}
+                }
             elif line.startswith('# subgroup:'):
                 current_subgroup = line.split(': ')[1].strip()
-                # Splitting the subgroup to extract the category
                 if '-' in current_subgroup:
                     current_subgroup, current_category = current_subgroup.split('-', 1)
                 else:
-                    current_category = 'general'  # Default category if no hyphen
-                if current_subgroup not in emoji_dict[current_group]:
-                    emoji_dict[current_group][current_subgroup] = {}
-                if current_category not in emoji_dict[current_group][current_subgroup]:
-                    emoji_dict[current_group][current_subgroup][current_category] = []
+                    current_category = 'general'
+                emoji_dict[current_group]["subgroups"].setdefault(current_subgroup, {
+                    "interjection": interjections.get(current_subgroup, "!"),
+                    "categories": {}
+                })
+                emoji_dict[current_group]["subgroups"][current_subgroup]["categories"].setdefault(current_category, {
+                    "interjection": interjections.get(current_category, "!"),
+                    "emojis": []
+                })
             elif not line.startswith('#') and line.strip():
                 parts = line.split(';')
-                emoji = parts[0].strip().split()[0]  # Assuming the first part is the emoji
-                description = parts[-1].strip().split('# ')[1]  # Assuming description is after '#'
-                description = re.sub(r' E\d+\.\d+', '', description)  # Removing the "E" designation
-                emoji_dict[current_group][current_subgroup][current_category].append((emoji, description))
+                emoji = parts[0].strip().split()[0]
+                description = parts[-1].strip().split('# ')[1]
+                description = re.sub(r' E\d+\.\d+', '', description)
+                emoji_dict[current_group]["subgroups"][current_subgroup]["categories"][current_category]["emojis"].append((emoji, description))
 
     return emoji_dict
 
@@ -36,16 +52,18 @@ def parse_emoji_data(file_path):
 if __name__ == "__main__":
     emoji_data = parse_emoji_data('emoji-test.txt')
 
-    # Writing to a file
+    # Writing to a text file
     with open('parsed_emoji_data.txt', 'w', encoding='utf-8') as file:
-        for group, subgroups in emoji_data.items():
-            file.write(f"Group: {group}\n")
-            for subgroup, categories in subgroups.items():
-                file.write(f"  Subgroup: {subgroup}\n")
-                for category, emojis in categories.items():
-                    file.write(f"    Category: {category}\n")
-                    for emoji, description in emojis:
+        for group, group_data in emoji_data.items():
+            file.write(f"Group: {group} - {group_data['interjection']}\n")
+            for subgroup, subgroup_data in group_data["subgroups"].items():
+                file.write(f"  Subgroup: {subgroup} - {subgroup_data['interjection']}\n")
+                for category, category_data in subgroup_data["categories"].items():
+                    file.write(f"    Category: {category} - {category_data['interjection']}\n")
+                    for emoji, description in category_data["emojis"]:
                         file.write(f"      {emoji}: {description}\n")
 
+
+    # Writing to JSON file
     with open('parsed_emoji_data.json', 'w', encoding='utf-8') as file:
         json.dump(emoji_data, file, ensure_ascii=False, indent=4)
