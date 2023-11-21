@@ -12,7 +12,6 @@ def generate_fonts_json():
         "Lora", "Arvo", "Josefin Sans", "Alegreya", "Libre Baskerville", "Poppins",
         "Nunito", "Cinzel", "Fjalla One", "PT Sans", "PT Serif", "Old Standard TT",
         "Abril Fatface", "Inconsolata", "Droid Serif", "Droid Sans", "Lobster", "Papyrus",
-        # ... other fonts as needed
     ]
     characters = list(string.ascii_uppercase) + list(string.ascii_lowercase) + list(string.digits) + list(string.punctuation)
 
@@ -45,4 +44,44 @@ def generate_fonts_json():
     with open('fonts_collection.json', 'w', encoding='utf-8') as file:
         json.dump(fonts_collection, file, indent=4)
 
-generate_fonts_json()
+#generate_fonts_json()
+
+def add_new_fonts(file_path, new_fonts):
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            fonts_collection = json.load(file)
+    except FileNotFoundError:
+        fonts_collection = {}
+
+    # Rarity distribution for new fonts: 70% common, 25% rare, 5% ultra-rare
+    num_new_fonts = len(new_fonts)
+    common_count = int(0.70 * num_new_fonts)
+    rare_count = int(0.25 * num_new_fonts)
+    ultra_rare_count = num_new_fonts - common_count - rare_count  # Adjust to ensure total matches
+
+    rarities = (
+        ["common"] * common_count +
+        ["rare"] * rare_count +
+        ["ultra-rare"] * ultra_rare_count
+    )
+    random.shuffle(rarities)  # Shuffle to distribute rarities randomly
+
+    characters = list(string.ascii_uppercase) + list(string.ascii_lowercase) + list(string.digits) + list(string.punctuation)
+
+    # Adding new fonts with assigned rarities
+    for font, rarity in zip(new_fonts, rarities):
+        if font not in fonts_collection:
+            fonts_collection[font] = {
+                "rarity": rarity,
+                "characters": {char: False for char in characters}
+            }
+
+    # Save updated data
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(fonts_collection, file, indent=4)
+
+# Example usage with specific fonts
+existing_font = "Verdana"  # A font from the original list
+new_public_font = "Open Dyslexic"  # A new public font
+
+add_new_fonts('fonts_collection.json', [existing_font, new_public_font])
