@@ -8,6 +8,7 @@ interjections = {
     "fruit": "Sweet!",
     "animal": "Cute!",
     "vegetable": "Healthy!",
+    "cat": "Meow!",
     # ... add more mappings as needed
 }
 

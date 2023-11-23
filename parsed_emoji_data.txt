@@ -135,7 +135,7 @@ Group: Smileys & Emotion - !
       👽 (1F47D): alien, Emoticons: 
       👾 (1F47E): alien monster, Emoticons: 
       🤖 (1F916): robot, Emoticons: 
-  Subgroup: cat - !
+  Subgroup: cat - Meow!
     Category: face - !
       😺 (1F63A): grinning cat, Emoticons: 
       😸 (1F638): grinning cat with smiling eyes, Emoticons: 
