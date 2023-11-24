@@ -119,7 +119,7 @@ Group: Smileys & Emotion - !
     Category: negative - !
       😤 (1F624): face with steam from nose, Emoticons: 
       😡 (1F621): enraged face, Emoticons: 
-      😠 (1F620): angry face, Emoticons: 
+      😠 (1F620): angry face, Emoticons: >:[, >:(
       🤬 (1F92C): face with symbols on mouth, Emoticons: 
       😈 (1F608): smiling face with horns, Emoticons: 
       👿 (1F47F): angry face with horns, Emoticons: 

@@ -16,6 +16,7 @@ interjections = {
 emoticons_dict = {
     "😀": [":^)", ":)", "=)", ":-)", "=-)"],
     "😁": [":D", ":-D", "=D"],
+    "😠": [">:[", ">:("],
     # Add more emojis and corresponding emoticons here
     # ...
 }
