@@ -9,6 +9,7 @@ interjections = {
     "animal": "Cute!",
     "vegetable": "Healthy!",
     "cat": "Meow!",
+    "single-finger": "Look over there!",
     # ... add more mappings as needed
 }
 
