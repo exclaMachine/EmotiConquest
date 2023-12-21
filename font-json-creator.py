@@ -13,75 +13,72 @@ def generate_fonts_json():
         "Nunito", "Cinzel", "Fjalla One", "PT Sans", "PT Serif", "Old Standard TT",
         "Abril Fatface", "Inconsolata", "Droid Serif", "Droid Sans", "Lobster", "Papyrus",
     ]
-    characters = list(string.ascii_uppercase) + list(string.ascii_lowercase) + list(string.digits) + list(string.punctuation)
 
-    # Rarity distribution: 70% common, 25% rare, 5% ultra-rare
+    characters = list("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~")
+
     num_fonts = len(fonts)
     common_count = int(0.70 * num_fonts)
     rare_count = int(0.25 * num_fonts)
-    ultra_rare_count = num_fonts - common_count - rare_count  # Adjust to ensure total matches
+    ultra_rare_count = num_fonts - common_count - rare_count
 
     rarities = (
         ["common"] * common_count +
         ["rare"] * rare_count +
         ["ultra-rare"] * ultra_rare_count
     )
-    random.shuffle(rarities)  # Shuffle to distribute rarities randomly
+    random.shuffle(rarities)
 
-    # Assigning rarities to fonts
     font_rarities = dict(zip(fonts, rarities))
-
-    # Ensuring Papyrus is ultra-rare
     font_rarities["Papyrus"] = "ultra-rare"
 
-    fonts_collection = {
-        font: {
+    fonts_list = []
+    for font in fonts:
+        characters_list = [{"character": char, "collected": False} for char in characters]
+        font_data = {
+            "name": font,
             "rarity": font_rarities[font],
-            "characters": {char: False for char in characters}
-        } for font in fonts
-    }
+            "characters": characters_list
+        }
+        fonts_list.append(font_data)
+
+    fonts_collection = {"fonts": fonts_list}
 
     with open('fonts_collection.json', 'w', encoding='utf-8') as file:
         json.dump(fonts_collection, file, indent=4)
 
-#generate_fonts_json()
+generate_fonts_json()
 
 def add_new_fonts(file_path, new_fonts):
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
             fonts_collection = json.load(file)
     except FileNotFoundError:
-        fonts_collection = {}
-
-    # Rarity distribution for new fonts: 70% common, 25% rare, 5% ultra-rare
-    num_new_fonts = len(new_fonts)
-    common_count = int(0.70 * num_new_fonts)
-    rare_count = int(0.25 * num_new_fonts)
-    ultra_rare_count = num_new_fonts - common_count - rare_count  # Adjust to ensure total matches
-
-    rarities = (
-        ["common"] * common_count +
-        ["rare"] * rare_count +
-        ["ultra-rare"] * ultra_rare_count
-    )
-    random.shuffle(rarities)  # Shuffle to distribute rarities randomly
+        fonts_collection = {"fonts": []}
 
     characters = list(string.ascii_uppercase) + list(string.ascii_lowercase) + list(string.digits) + list(string.punctuation)
 
-    # Adding new fonts with assigned rarities
-    for font, rarity in zip(new_fonts, rarities):
-        if font not in fonts_collection:
-            fonts_collection[font] = {
+    for font in new_fonts:
+        if not any(f["name"] == font for f in fonts_collection["fonts"]):
+            common_count, rare_count, ultra_rare_count = calculate_rarity_distribution(1)
+            rarity = random.choice(["common"] * common_count + ["rare"] * rare_count + ["ultra-rare"] * ultra_rare_count)
+            characters_list = [{"character": char, "collected": False} for char in characters]
+            font_data = {
+                "name": font,
                 "rarity": rarity,
-                "characters": {char: False for char in characters}
+                "characters": characters_list
             }
+            fonts_collection["fonts"].append(font_data)
 
-    # Save updated data
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(fonts_collection, file, indent=4)
 
-# Example usage with specific fonts
-existing_font = "Verdana"  # A font from the original list
-new_public_font = "Open Dyslexic"  # A new public font
+def calculate_rarity_distribution(num_fonts):
+    common_count = int(0.70 * num_fonts)
+    rare_count = int(0.25 * num_fonts)
+    ultra_rare_count = num_fonts - common_count - rare_count
+    return common_count, rare_count, ultra_rare_count
 
-add_new_fonts('fonts_collection.json', [existing_font, new_public_font])
+# Example usage
+existing_font = "Verdana"
+new_public_font = "Open Dyslexic"
+#add_new_fonts('fonts_collection.json', [existing_font, new_public_font])
