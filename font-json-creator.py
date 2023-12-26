@@ -4,15 +4,27 @@ import string
 
 def generate_fonts_json():
     fonts = [
-        "Arial", "Verdana", "Times New Roman", "Georgia", "Courier New", "Comic Sans MS",
-        "Helvetica", "Garamond", "Trebuchet MS", "Impact", "Palatino", "Baskerville",
-        "Avant Garde", "Gill Sans", "Tahoma", "Lucida Sans", "Optima", "Perpetua",
-        "Futura", "Franklin Gothic", "Roboto", "Lato", "Open Sans", "Montserrat",
-        "Source Sans Pro", "Raleway", "Ubuntu", "Merriweather", "Noto Sans", "Playfair Display",
-        "Lora", "Arvo", "Josefin Sans", "Alegreya", "Libre Baskerville", "Poppins",
-        "Nunito", "Cinzel", "Fjalla One", "PT Sans", "PT Serif", "Old Standard TT",
-        "Abril Fatface", "Inconsolata", "Droid Serif", "Droid Sans", "Lobster", "Papyrus",
-    ]
+    "Roboto",
+    "Open Sans",
+    "Lato",
+    "Montserrat",
+    "Oswald",
+    "Raleway",
+    "Noto Sans",
+    "Poppins",
+    "Ubuntu",
+    "Playfair Display",
+    "Merriweather",
+    "Mukta",
+    "Work Sans",
+    "Nunito",
+    "Fira Sans",
+    "Roboto Condensed",
+    "Quicksand",
+    "Alegreya",
+    "Karla"
+]
+
 
     characters = list("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~")
 
@@ -29,7 +41,7 @@ def generate_fonts_json():
     random.shuffle(rarities)
 
     font_rarities = dict(zip(fonts, rarities))
-    font_rarities["Papyrus"] = "ultra-rare"
+    #font_rarities["Papyrus"] = "ultra-rare"
 
     fonts_list = []
     for font in fonts:
