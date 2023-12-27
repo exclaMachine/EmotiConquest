@@ -19,7 +19,6 @@ def generate_fonts_json():
     "Work Sans",
     "Nunito",
     "Fira Sans",
-    "Roboto Condensed",
     "Quicksand",
     "Alegreya",
     "Karla"
