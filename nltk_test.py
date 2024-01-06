@@ -29,7 +29,7 @@ tag_full_names = {
 def tag_parts_of_speech(lyrics):
     words = word_tokenize(lyrics)
     tagged = nltk.pos_tag(words)
-    return ' '.join(['[' + tag_full_names.get(tag, 'other') + ']' if word.isalpha() else word for word, tag in tagged])
+    return ' '.join(['[' + tag_full_names.get(tag, word) + ']' if word.isalpha() else word for word, tag in tagged])
 
 # Sample lyrics for testing
 #lyrics = "Twinkle, twinkle, little star, How I wonder what you are"
