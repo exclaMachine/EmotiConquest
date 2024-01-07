@@ -30,12 +30,20 @@ def tag_parts_of_speech(lyrics):
     words = word_tokenize(lyrics)
     tagged = nltk.pos_tag(words)
     modified_lyrics = []
+    replaced_tags = set()
+
     for word, tag in tagged:
         if word.isalpha():
-            modified_lyrics.append('[' + tag_full_names.get(tag, word) + ']' if tag in tag_full_names else word)
+            full_tag = tag_full_names.get(tag)
+            if full_tag and full_tag not in replaced_tags:
+                modified_lyrics.append('[' + full_tag + ']')
+                replaced_tags.add(full_tag)
+            else:
+                modified_lyrics.append(word)
         else:
             modified_lyrics.append(word)
     return ' '.join(modified_lyrics)
+
 # Sample lyrics for testing
 #lyrics = "Twinkle, twinkle, little star, How I wonder what you are"
 lyrics = """When we were young, the future was so bright Woah-oh The old neighborhood was so alive Woah-oh And every kid on the whole damn street
